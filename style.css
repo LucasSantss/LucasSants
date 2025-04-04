@@ -375,8 +375,22 @@ button:hover {
     gap: 1rem;
 }
 
+
 .menu li {
+    font-size: 20px;
     width: 30%;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.menu li a:hover {
+    scale: 1.1;
+    color: #0152fc;
+    text-decoration: underline;
 }
 
 .footer-section {
