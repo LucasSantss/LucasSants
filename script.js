@@ -77,12 +77,12 @@ gsap.from('.pyramid', {
 gsap.utils.toArray('.blink').forEach(line => {
     gsap.fromTo(line, {
         opacity: 0,
-        width: '0%'
+        x: -100
     }, {
         opacity: 0.5,
-        width: '100%',
+        x: 0,
         duration: 1,
-        delay: 1,
+        delay: 1.5,
         scrollTrigger: line
 
     })
@@ -92,7 +92,7 @@ gsap.utils.toArray('.blink').forEach(line => {
 gsap.fromTo('.hand', {
     scale: .2,
     opacity: 0,
-    skewY: 30
+    skewY: 20,
 }, {
     scale: 1,
     opacity: 1,
@@ -121,7 +121,7 @@ gsap.utils.toArray('.line').forEach(line => {
 
 gsap.fromTo('.card', {
     opacity: 0,
-    scale: .1,
+    scale: .5,
 }, {
     opacity: 1,
     scale: 1,
@@ -169,4 +169,10 @@ projects.forEach((item, i) => {
     })
 })
 
+//navbar @media
+const menu_btn = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav-bar');
 
+menu_btn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+})

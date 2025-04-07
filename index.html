@@ -12,12 +12,15 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
 </head>
 
 <body id="particles-js">
     <header>
         <nav id="particles-js" class="nav-bar">
             <ul class="menu-items">
+                <button class="hamburger"></button>
+                <li><a href="#home"><img class="logo" src="./img/logo.png" alt=""></a></li>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
                 <li><a href="#carreira">Carreira</a></li>
                 <li><a href="#Habilidades">Habilidades</a></li>
@@ -29,7 +32,7 @@
     </header>
     <div class="scrollArea"></div>
 
-    <section>
+    <section id="home">
         <div class="container">
             <div class="left-side">
                 <div class="title">
@@ -136,8 +139,8 @@
                 <p class="p">
                     Atuava na manutenção preventiva dos motores e equipamentos.<br> Troca de atuadores, sensores e
                     outros equipamentos elétricos das máquinas.
-                </p>
                 <div class="line line-blue"></div>
+                </p>
             </div>
             <div class="right-side"><img class="imagens blink" src="./img/textil.png" alt="" style="opacity: .5;">
             </div>
@@ -365,7 +368,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script src="./script.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
