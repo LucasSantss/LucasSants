@@ -472,12 +472,21 @@ footer {
         align-items: center;
     }
 
+    .side-carreira {
+        align-self: center;
+    }
+
     .container div {
         margin-bottom: 20px;
     }
 
     .projects {
         width: 100%;
+    }
+
+    .pre-btn,
+    .nxt-btn {
+        display: none;
     }
 
     .menu {
