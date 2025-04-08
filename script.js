@@ -170,7 +170,7 @@ projects.forEach((item, i) => {
 })
 
 //navbar @media
-const menu_btn = document.querySelector('.hamburger');
+const menu_btn = document.querySelector('.logo');
 const nav = document.querySelector('.nav-bar');
 
 menu_btn.addEventListener('click', () => {

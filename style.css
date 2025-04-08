@@ -65,35 +65,13 @@ header {
 
 .logo {
     width: 100px;
-    height: 100%;
+    transition: 0.3s;
 }
 
 li {
     list-style: none;
     text-transform: capitalize;
 }
-
-.hamburger {
-    border: none;
-    background: none;
-    border-top: 3px solid #fff;
-    padding: 0;
-    border-radius: 0;
-    display: none;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    margin-top: 5px;
-    position: relative;
-    transition: .5s;
-}
-
 
 .menu-items a {
     text-decoration: none;
@@ -452,15 +430,15 @@ footer {
 }
 
 @media(max-width: 780px) {
-
-
-    .hamburger {
-        display: block;
+    body {
+        text-align: center;
     }
 
     header {
         justify-self: auto;
     }
+
+    /*clip-path: circle(35px at 50% 44px);*/
 
     .nav-bar {
         position: fixed;
@@ -472,27 +450,18 @@ footer {
         background: #1a1a1a;
         opacity: .95;
         border-radius: 25px;
-        clip-path: circle(35px at 50% 44px);
+        clip-path: circle(40px at 50% 43px);
         transition: 1s;
     }
 
+    /*clip-path: circle(700px at 50% 44px);*/
+
     .nav-bar.active {
-        clip-path: circle(1500px at 50% 44px);
+        clip-path: circle(700px at 50% 44px);
         pointer-events: all;
+        transition: 2s;
     }
 
-    .nav-bar.active .hamburger {
-        border-top-color: transparent;
-    }
-
-    .nav-bar.active .hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    .nav-bar.active .hamburger::after {
-        transform: rotate(-135deg);
-        top: -8px;
-    }
 
     .menu-items {
         display: flex;
@@ -500,7 +469,12 @@ footer {
         align-items: center;
         justify-content: flex-start;
         height: 100%;
-        margin-top: 2rem;
+
+    }
+
+    .logo:hover {
+        scale: 1.1;
+        transition: .3s;
     }
 
     .container {
