@@ -13,8 +13,7 @@
 
 .particles-js-canvas-el {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: auto;
     z-index: 0;
     top: 0;
     left: 0;
@@ -241,7 +240,6 @@ button:hover {
     color: #0152fc;
 }
 
-
 .actions {
     position: absolute;
     bottom: 25px;
@@ -275,8 +273,6 @@ button:hover {
 }
 
 .img-card {
-    max-width: 350px;
-    max-height: 350px;
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
@@ -332,7 +328,7 @@ button:hover {
             #2b2b2b, #1a1a1a);
 }
 
-.card>:not(:hover) {
+.card:hover {
     transition: .25s;
     opacity: .5;
     scale: .99;
@@ -401,42 +397,20 @@ footer {
     padding: 3rem;
 }
 
-.center {
-    justify-self: center;
-}
 
-.star-s2 {
-    position: absolute;
-    width: 65px;
-    right: -2%;
-}
-
-.star-s4 {
-    width: 65px;
-    position: absolute;
-    left: -2%;
-    margin-top: 2.5rem;
-}
-
-.star-s5 {
-    position: absolute;
-    left: 40%;
-    width: 40px;
-}
-
-.image {
-
-    animation: float 4s ease-in-out infinite;
-}
-
-@media(max-width: 780px) {
+@media(max-width: 855px) {
     body {
         text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     header {
         justify-self: auto;
     }
+
+
 
     /*clip-path: circle(35px at 50% 44px);*/
 
@@ -445,7 +419,7 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         top: 0;
-        width: 200px;
+        width: 150px;
         height: 650px;
         background: #1a1a1a;
         opacity: .95;
@@ -455,6 +429,8 @@ footer {
     }
 
     /*clip-path: circle(700px at 50% 44px);*/
+
+
 
     .nav-bar.active {
         clip-path: circle(700px at 50% 44px);
@@ -480,13 +456,14 @@ footer {
     .container {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .container-habilidades {
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden
     }
 
     .container-carreira {
@@ -500,7 +477,7 @@ footer {
     }
 
     .projects {
-        width: auto;
+        width: 100%;
     }
 
     .menu {
@@ -519,5 +496,13 @@ footer {
     .imagens {
         max-height: none;
         width: 70%;
+    }
+
+    .menu a {
+        font-size: 2.5rem;
+    }
+
+    .menu a span {
+        display: none;
     }
 }

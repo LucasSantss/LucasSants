@@ -15,17 +15,16 @@ gsap.from(menu_items.children, {
     delay: 1.5,
     stagger: {
         amount: 1
-    }
+    },
 })
 
 
 
 gsap.utils.toArray('.title').forEach(title => {
     gsap.fromTo(title, {
-        letterSpacing: '10px',
         opacity: 0,
-        x: 300,
-        skewX: 65
+        x: -100,
+        skewX: -65
     }, {
         letterSpacing: '0',
         opacity: 1,
@@ -40,7 +39,7 @@ gsap.utils.toArray('.title').forEach(title => {
 gsap.utils.toArray('p').forEach(p => {
     gsap.fromTo(p, {
         opacity: 0,
-        x: 150,
+        x: -150,
         skewX: 30
     }, {
         opacity: 1,
@@ -92,7 +91,7 @@ gsap.utils.toArray('.blink').forEach(line => {
 gsap.fromTo('.hand', {
     scale: .2,
     opacity: 0,
-    skewY: 20,
+    skewY: -20,
 }, {
     scale: 1,
     opacity: 1,
@@ -134,11 +133,9 @@ gsap.fromTo('.card', {
 })
 
 const menu = document.querySelector('.menu')
-
-
 gsap.from(menu.children, {
     opacity: 0,
-    x: 50,
+    x: -50,
     duration: 1,
     delay: .5,
     stagger: {
