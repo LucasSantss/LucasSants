@@ -18,6 +18,16 @@ gsap.from(menu_items.children, {
     },
 })
 
+const tecs = document.querySelector('.tecs')
+gsap.from(tecs.children, {
+    opacity: 0,
+    x: 0,
+    duration: 1,
+    delay: 1.5,
+    stagger: {
+        amount: 1
+    },
+})
 
 
 gsap.utils.toArray('.title').forEach(title => {
